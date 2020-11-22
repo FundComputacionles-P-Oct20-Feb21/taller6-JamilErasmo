@@ -1,0 +1,39 @@
+1. Inicio
+// Variables
+2. contador, i[o,n] <-- 1
+3. nombre, x(200)[{a-z},{A-Z}]
+4. costo, d[0,n]
+5. tipo, i[0,n]
+6. total, d[0,n]
+7. cadena, x(200)[{1-9},{a-z},{A-Z},{BS}] <-- ""
+8. porcentaje1 = 10
+9. porcentaje2 = 20n
+10. Descuento, d[0,n]
+// Ingreso de datos
+11. Mientras contador <= 7 entonces
+12.  Escribir "Ingrese el nombre del cliente"
+13.  Leer nombre
+14.  Escribir "Ingrese el costo de la computadora"
+15.  Leer costo
+16.  Escrbir "Ingrese el tipo del cliente"
+17.  Leer tipo
+// Proceso
+18.    Si tipo = 1 entonces
+19.     descuento <-- (porcentaje1 * costo)/100
+20.     total <-- costo - descuento  
+21.     cadena = cadena + nombre + "Compra computadora con precio" + costo + " y el costofinal a pagar es:$" + total "\n"
+22.    De lo contrario
+23.     Si tipo = 2 entonces
+24.     descuento <-- (porcentaje2 * costo)/100
+25.     total <-- costo - descuento  
+26.     cadena = cadena + nombre + "Compra computadora con precio" + costo + " y el costofinal a pagar es:$" + total "\n"
+27.    De lo contrario
+28.     descuento <-- 0
+29.     total <-- costo
+30.     cadena = cadena + nombre + "Compra computadora con precio" + costo + " y el costofinal a pagar es:$" + total "\n"
+31.    Fin si
+32.  contador <-- contador + 1      
+33. Fin Mientras
+// Salida
+34. Escribir cadena
+35. Fin
